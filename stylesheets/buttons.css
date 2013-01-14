@@ -1,0 +1,125 @@
+/** =COMMON BUTTON STYLES
+----------------------------------------------- */
+.button { 
+  display: block;
+  float: left;
+  margin: 0;
+  border: 0; 
+  padding: 0; 
+  line-height: 1em;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+}
+button:focus::-moz-focus-inner { 
+  border-color: transparent !important; 
+} 
+button::-moz-focus-inner { 
+  border: none;
+  padding: 0;
+}
+
+a.button:link, 
+a.button:visited {
+  color: #333;
+}
+a.icon_button, 
+button.icon_button {
+  padding-left: 8px;
+}
+.button img {
+  border: 0;
+  vertical-align: middle;
+}
+
+
+/* primary */
+button.primary, 
+a:link.primary, 
+a:visited.primary {
+  font-weight: bold;
+  color: #000;
+}
+
+/* disabled */
+button.disabled, 
+a:link.disabled, 
+a:visited.disabled {
+  color: #aaa;
+  cursor: default;
+}
+button.disabled img, 
+a.disabled img {
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/** =ROUND BUTTON STYLES
+----------------------------------------------- */
+.round_button, 
+.disabled.round_button:hover {
+  padding: 5px 13px 6px 13px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+
+  -webkit-box-shadow: inset 0 1px 0 0 #f6f6f6;
+  box-shadow: inset 0 1px 0 0 #f6f6f6;
+
+  text-shadow: 0 1px 0 #fff;
+  border: 1px solid #aaa;
+  background-color: #e7e5e7;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fdfdfd,EndColorStr=#e7e5e7);
+  background-image: -moz-linear-gradient(top,#fdfdfd 0,#e7e5e7 100%);
+  background-image: -ms-linear-gradient(top,#fdfdfd 0,#e7e5e7 100%);
+  background-image: -o-linear-gradient(top,#fdfdfd 0,#e7e5e7 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(100%,#e7e5e7));
+  background-image: -webkit-linear-gradient(top,#fdfdfd 0,#e7e5e7 100%);
+  background-image: linear-gradient(to bottom,#fdfdfd 0,#e7e5e7 100%);
+}
+
+.round_button:hover {
+  border: 1px solid #888;
+}
+.round_button:active {
+  -webkit-box-shadow: inset 0 0 4px 2px #ddd, 0 0 1px 0 #eeeeee;
+  box-shadow: inset 0 0 4px 2px #ddd, 0 0 1px 0 #eeeeee;
+}
+
+/** =RECT BUTTON STYLES
+----------------------------------------------- */
+.rect_button, 
+.disabled.rect_button:hover {
+  padding: 3px 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: inset 0 1px 0 0 #f6f6f6;
+  box-shadow: inset 0 1px 0 0 #f6f6f6;
+
+  text-shadow: 0 1px 0 #fff;
+  border: 1px solid #aaa;
+  background-color: #dcdcdc;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fdfdfd,EndColorStr=#dcdcdc);
+  background-image: -moz-linear-gradient(top,#fdfdfd 0,#dcdcdc 100%);
+  background-image: -ms-linear-gradient(top,#fdfdfd 0,#dcdcdc 100%);
+  background-image: -o-linear-gradient(top,#fdfdfd 0,#dcdcdc 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(100%,#dcdcdc));
+  background-image: -webkit-linear-gradient(top,#fdfdfd 0,#dcdcdc 100%);
+  background-image: linear-gradient(to bottom,#fdfdfd 0,#dcdcdc 100%);
+}
+
+.rect_button:hover {
+  border: 1px solid #888;
+}
+.rect_button:active {
+  -webkit-box-shadow: inset 0 0 4px 2px #ddd, 0 0 1px 0 #eeeeee;
+  box-shadow: inset 0 0 4px 2px #ddd, 0 0 1px 0 #eeeeee;  
+}
