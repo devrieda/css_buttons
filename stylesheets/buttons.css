@@ -28,7 +28,9 @@ a.button:visited {
   color: #333;
 }
 a.icon_button, 
-button.icon_button {
+button.icon_button, 
+a.disabled.icon_button:hover, 
+button.disabled.icon_button:hover {
   padding-left: 8px;
 }
 .button img {
